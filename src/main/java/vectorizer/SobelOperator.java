@@ -10,7 +10,7 @@ public class SobelOperator {
 	private static Integer[][] vertical = {{-1, -2, -1}, {0, 0, 0}, {1, 2, 1}};
 	private static Integer sizeOfGrid = 3;
 	
-	public static Optional<BufferedImage> ApplyGradientMagnitude(Optional<BufferedImage> img) {
+	public static Optional<BufferedImage> applyGradientMagnitude(Optional<BufferedImage> img) {
 		Optional<BufferedImage> sobel;
 		if (img.isPresent()) {
 			sobel = Optional.of(new BufferedImage(img.get().getWidth()-1, img.get().getHeight(), 5));

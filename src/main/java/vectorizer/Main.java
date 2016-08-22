@@ -45,7 +45,7 @@ public class Main {
 		ImageLoader i = new FileImageLoader(image);
 		Optional<BufferedImage> bi = i.getImage();
 		Optional<BufferedImage> another = GrayScale.ApplyGrayScale(bi);
-        Optional<BufferedImage> check = SobelOperator.ApplyGradientMagnitude(another);
+        Optional<BufferedImage> check = SobelOperator.applyGradientMagnitude(another);
 		ImageLoader yo = new FileImageLoader(check);
 		showImage(yo);
 		saveImage(check, "dog3.bmp");
