@@ -11,7 +11,7 @@ import java.util.OptionalInt;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
-public class Main {
+public class ShowOrSave {
 	
 	//private static String image = "src/savedImages/grayminions.bmp";
 	private static String image = "src/images/girl.png";
@@ -40,7 +40,7 @@ public class Main {
 			System.out.println("Error while saving image.");
 		}
 	}
-
+/*
 	public static void main(String[] args) {
 		ImageLoader i = new FileImageLoader(image);
 		Optional<BufferedImage> bi = i.getImage();
@@ -49,5 +49,5 @@ public class Main {
 		ImageLoader yo = new FileImageLoader(check);
 		showImage(yo);
 		saveImage(check, "dog3.bmp");
-	}
+	}*/
 }
